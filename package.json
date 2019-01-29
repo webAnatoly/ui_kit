@@ -1,0 +1,11 @@
+{
+  "name": "ui-kit",
+  "version": "1.0.0",
+  "description": "User interface kit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Anatoly"
+}
