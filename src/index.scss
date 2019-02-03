@@ -1,2 +1,7 @@
-@import './scss/base';
 @import './fonts/fonts';
+@import './scss/vendors/normalize';
+@import './scss/variables';
+@import './scss/base';
+@import './scss/typography';
+@import './scss/layout/grid';
+@import './scss/layout/wrapper';
