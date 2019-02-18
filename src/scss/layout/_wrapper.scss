@@ -3,8 +3,18 @@
   min-height: 100vh;
   margin: auto;
   border: 1px solid red;
+  padding: 8.3rem 5.3rem 10.9rem 5.3rem;
+
+  @media (max-width: $tab-port) {
+    width: 100%;
+    padding: 4.3rem 2.3rem 5.9rem 2.3rem;
+  }
+  @media (max-width: $phone) {
+    width: 100%;
+    padding: 2.3rem .3rem 2.9rem .3rem;
+  }
 }
 
-.wrapper.wrapper-index {
+.wrapper.wrapper-index { // wrapper-index это значит стиль используется только на странице index.html
   text-align: center;
 }

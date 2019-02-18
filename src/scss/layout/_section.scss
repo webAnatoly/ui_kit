@@ -1,0 +1,8 @@
+.section {
+  border: 1px solid blue;
+  min-height: 7.7rem;
+
+  &--index-main { // section--index-main это все <sections> верхнего уровня на странице index.html 
+    margin-bottom: 3.5rem;
+  }
+}
