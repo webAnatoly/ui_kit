@@ -54,7 +54,16 @@ module.exports = function(env, options) {
               loader: 'postcss-loader',
               options: { sourceMap: isDevMode, config: { path: './postcss.config.js' } }
             }, {
+              loader: 'resolve-url-loader',
+              options: {
+                debug: isDevMode,
+              }
+            }, {
               loader: 'sass-loader',
+              options: {
+                sourceMap: true, // всегда true, чтобы resolve-url-loader мог работать
+                sourceMapContents: false,
+              }
             },
           ]
         },
