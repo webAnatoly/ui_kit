@@ -1,0 +1,17 @@
+.btn-rect-lined-2 {
+  position: relative;
+  display: block;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: $color-main--darken;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: .5rem;
+    left: 0;
+    bottom: 0;
+  }
+}

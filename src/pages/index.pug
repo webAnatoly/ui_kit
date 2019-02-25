@@ -8,8 +8,34 @@ html(lang="en")
   body
     h1.visually-hidden UI Kit
     .wrapper.wrapper-index
-      section.section.section--index-main
+      section.section.section--index-main.section-btn-rect
         h2 standard buttons
+        .row
+          include ../components/buttons/btn-rect-1/btn-rect-1.pug
+          include ../components/buttons/btn-rect-2/btn-rect-2.pug
+          include ../components/buttons/btn-rect-3/btn-rect-3.pug
+          include ../components/buttons/btn-rect-4/btn-rect-4.pug
+          +btn-rect-1()
+          +btn-rect-2()
+          +btn-rect-3()
+          +btn-rect-4()
+
+        .row
+          include ../components/buttons/btn-rect-lined-1/btn-rect-lined-1.pug
+          include ../components/buttons/btn-rect-lined-2/btn-rect-lined-2.pug
+          include ../components/buttons/btn-rect-lined-3/btn-rect-lined-3.pug
+          include ../components/buttons/btn-rect-lined-4/btn-rect-lined-4.pug
+          +btn-rect-lined-1()
+          +btn-rect-lined-2()
+          +btn-rect-lined-3()
+          +btn-rect-lined-4()
+
+        .row
+          include ../components/buttons/btn-rect-lined-trns-1/btn-rect-lined-trns-1.pug
+          include ../components/buttons/btn-rect-lined-trns-2/btn-rect-lined-trns-2.pug
+          +btn-rect-lined-trns-1()
+          +btn-rect-lined-trns-2()
+
       section.section.section--index-main
         h2 arrow buttons
       section.section.section--index-main

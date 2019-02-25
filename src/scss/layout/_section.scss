@@ -5,4 +5,16 @@
   &--index-main { // section--index-main это все <sections> верхнего уровня на странице index.html 
     margin-bottom: 3.5rem;
   }
+
+  &-btn-rect {
+    
+    & .row {
+      justify-content: center;
+      align-items: center;
+
+      :not(:last-child) {
+        margin-right: 2.4rem;
+      }
+    }
+  }
 }
