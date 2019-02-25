@@ -1,7 +1,7 @@
-.btn-rect-lined-trns-1 {
+.btn-rect-lined-trns-4 {
   background: transparent;
-  color: $color-main;
-  border: 1px solid $color-main;
+  color: $color-second;
+  border: 1px solid $color-second;
   position: relative;
 
   &::after {
@@ -9,7 +9,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    background-color: $color-main;
+    background-color: $color-second;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     height: .3rem;
