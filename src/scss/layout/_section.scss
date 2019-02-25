@@ -7,10 +7,15 @@
   }
 
   &-btn-rect {
+
+    & h2 {
+      margin-bottom: 6.752rem;
+    }
     
     & .row {
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
+      margin-bottom: 2.2rem;
 
       :not(:last-child) {
         margin-right: 2.4rem;
