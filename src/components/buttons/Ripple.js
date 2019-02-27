@@ -16,48 +16,41 @@ class Ripple {
     if (this.options.color) {
       circle.style.backgroundColor = options.color;
     } else {
-      circle.style.backgroundColor = "pink";
-    }
-
-    if (this.options.size) {
-      circle.style.width = options.size;
-      circle.style.height = options.size;
-    } else {
-      circle.style.width = '5rem';
-      circle.style.height = '5rem';
+      circle.style.backgroundColor = "white";
     }
 
     circle.style.opacity = '0.5';
     circle.style.borderRadius = '100%';
     circle.style.position = 'absolute';
     circle.style.display = 'block';
-    circle.style.top = '0px';
-    circle.style.left = '0px';
     circle.style.zIndex = '99999';
+
+    circle.classList.add('btn-rect__ripple');
 
     return circle;
   }
 
-  _clear() {
+  _clear(elem) {
     // метод удаляет все circle внутри кнопки
+    while (elem.lastChild.tagName === 'SPAN') {
+      elem.removeChild(elem.lastChild);
+    }
   }
 
   _clickHandler(event, button) {
-    
+    this._clear(button);
     const ripple = this._createCircle();
+    const d = Math.max(button.clientWidth, button.clientHeight);
+    const btnCoords = button.getBoundingClientRect();
+
     button.appendChild(ripple);
-    console.log("click", event);
+
+    ripple.style.width = d / 2 + 'px';
+    ripple.style.height = d / 2 + 'px';
+    ripple.style.left = `${event.pageX - (btnCoords.left + pageXOffset) - d / 4}px`;
+    ripple.style.top = `${event.pageY - (btnCoords.top + pageYOffset) - d / 4}px`;
   }
 
-  _setCirclePosition(x, y) {
-    this.circle.style.left = `${x}px`;
-    this.circle.style.top = `${y}px`;
-  }
-
-  _getCursorPosition() {
-    // получает позицию курсора внутри кнопки
-    console.log('getCursorPosition');
-  }
 }
 
 export default Ripple;
