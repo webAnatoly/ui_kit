@@ -34,7 +34,7 @@ module.exports = function(env, options) {
           test: /\.pug$/,
           loader: 'pug-loader',
           options: {
-            pretty: isDevMode,
+            pretty: true,
           }
         },
         {
@@ -101,7 +101,7 @@ module.exports = function(env, options) {
       new HtmlWebpackPlugin({
         template: './src/pages/index.pug',
         filename: './index.html',
-        minify: isDevMode,
+        minify: false,
         inject: false,
       }),
       new CleanWebpackPlugin(['dist']),
