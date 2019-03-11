@@ -1,4 +1,4 @@
-import './index.scss';
+import './main.scss';
 import Ripple from './components/buttons/Ripple';
 
 

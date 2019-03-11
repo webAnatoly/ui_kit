@@ -7,7 +7,7 @@ module.exports = function(env, options) {
   const isDevMode = options.mode === 'development';
 
   return {
-    entry: './src/index.js',
+    entry: './src/main.js',
     output: {
       path: path.resolve(__dirname, './dist'),
       filename: 'js/[name].js',
@@ -99,7 +99,7 @@ module.exports = function(env, options) {
         chunkFilename: "css/[id].css"
       }),
       new HtmlWebpackPlugin({
-        template: './src/pages/index.pug',
+        template: './src/pages/main.pug',
         filename: './index.html',
         minify: false,
         inject: false,
