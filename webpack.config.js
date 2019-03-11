@@ -99,7 +99,7 @@ module.exports = function(env, options) {
         chunkFilename: "css/[id].css"
       }),
       new HtmlWebpackPlugin({
-        template: './src/pages/main.pug',
+        template: './src/pages/home.pug',
         filename: './index.html',
         minify: false,
         inject: false,
