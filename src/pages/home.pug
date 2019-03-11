@@ -31,6 +31,14 @@ html(lang="en")
 
       section.section.home__section
         h2 arrow buttons
+        .row
+          include ../components/buttons/btn-round/btn-round.pug
+          +btn-round({classes: "btn-round--border-main"})
+          +btn-round({classes: "btn-round--border-main", left: true})
+          +btn-round({classes: "btn-round--bg-third", arrowClass: "btn-round__arrow--color-light"})
+          +btn-round({classes: "btn-round--bg-third", arrowClass: "btn-round__arrow--color-light", left: true})
+          +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light" })
+          +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light", left: true})
       section.section.home__section
         h2 percentages / pie chart
       section.section.home__section

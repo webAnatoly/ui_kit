@@ -1,8 +1,3 @@
-$color-main: #4eb7a8;
-$color-main--darken: #28a290;
-$color-second: #e75735;
-$color-second--darken: #bf3e1f;
-
 .color-light {
   color: $color-light;
 }
@@ -18,6 +13,10 @@ $color-second--darken: #bf3e1f;
 }
 .color-second--darken {
   color: $color-second--darken;
+}
+
+.bg-light {
+  background-color: $color-light;
 }
 
 .bg-color-main {

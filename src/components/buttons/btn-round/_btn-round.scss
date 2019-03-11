@@ -1,0 +1,44 @@
+.btn-round {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+
+  &__arrow {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: transparent;
+    border-left: 3px solid $color-main;
+    border-bottom: 3px solid $color-main;
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: rotate(45deg);
+
+    &--left {
+      top: 35%;
+      left: 32%;
+      transform: rotate(225deg);
+    }
+
+    &--color-light {
+      border-left: 3px solid $color-light;
+      border-bottom: 3px solid $color-light;
+    }
+  }
+
+  &--border-main {
+    border: 3px solid $color-main;
+  }
+
+  &--bg-main {
+    background-color: $color-main;
+  }
+
+  &--bg-third {
+    background-color: #e5e5e5;
+  }
+}
