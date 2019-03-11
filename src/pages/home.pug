@@ -5,10 +5,10 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="./css/main.css")
     title UI kit
-  body
+  body.home
     h1.visually-hidden UI Kit
-    .wrapper.wrapper-index
-      section.section.section--index-main.section-btn-rect
+    .wrapper.home__wrapper
+      section.section.home__section.home__btn-rect-container
         h2 standard buttons
         .row
           include ../components/buttons/btn-rect/btn-rect.pug
@@ -29,29 +29,29 @@ html(lang="en")
           +btn-rect({classes: "btn-rect--shdw-second btn-rect--bg-transp color-second btn-rect--big btn-rect--second-border"})
           +btn-rect({classes: "btn-rect--shdw-second btn-rect--bg-transp color-second btn-rect--second-border"})
 
-      section.section.section--index-main
+      section.section.home__section
         h2 arrow buttons
-      section.section.section--index-main
+      section.section.home__section
         h2 percentages / pie chart
-      section.section.section--index-main
+      section.section.home__section
         h2 sliders
-      section.section.section--index-main
+      section.section.home__section
         h2 stages
-      section.section.section--index-main
+      section.section.home__section
         h2 form elements
-      section.section.section--index-main
+      section.section.home__section
         h2 search / drop down
-      section.section.section--index-main
+      section.section.home__section
         h2 user profile
-      section.section.section--index-main
+      section.section.home__section
         h2 news & events
-      section.section.section--index-main
+      section.section.home__section
         h2 location
-      section.section.section--index-main
+      section.section.home__section
         h2 calendar
-      section.section.section--index-main
+      section.section.home__section
         h2 messaging
-      section.section.section--index-main
+      section.section.home__section
         h2 video
 
       script(src='./js/main.js')

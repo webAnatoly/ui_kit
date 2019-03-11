@@ -1,25 +1,4 @@
 .section {
   border: 1px solid blue;
   min-height: 7.7rem;
-
-  &--index-main { // section--index-main это все <sections> верхнего уровня на странице index.html 
-    margin-bottom: 3.5rem;
-  }
-
-  &-btn-rect {
-
-    & h2 {
-      margin-bottom: 6.752rem;
-    }
-    
-    & .row {
-      justify-content: center;
-      align-items: flex-end;
-      margin-bottom: 2.2rem;
-
-      :not(:last-child) {
-        margin-right: 2.4rem;
-      }
-    }
-  }
 }
