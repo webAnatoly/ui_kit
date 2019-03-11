@@ -11,34 +11,23 @@ html(lang="en")
       section.section.section--index-main.section-btn-rect
         h2 standard buttons
         .row
-          include ../components/buttons/btn-rect-1/btn-rect-1.pug
-          include ../components/buttons/btn-rect-2/btn-rect-2.pug
-          include ../components/buttons/btn-rect-3/btn-rect-3.pug
-          include ../components/buttons/btn-rect-4/btn-rect-4.pug
-          +btn-rect-1()
-          +btn-rect-2()
-          +btn-rect-3()
-          +btn-rect-4()
+          include ../components/buttons/btn-rect/btn-rect.pug
+          +btn-rect({classes: "color-light"})
+          +btn-rect({classes: "btn-rect--big color-light"})
+          +btn-rect({classes: "btn-rect--big btn-rect--color-second color-light"})
+          +btn-rect({classes: "btn-rect--color-second color-light"})
 
         .row
-          include ../components/buttons/btn-rect-lined-1/btn-rect-lined-1.pug
-          include ../components/buttons/btn-rect-lined-2/btn-rect-lined-2.pug
-          include ../components/buttons/btn-rect-lined-3/btn-rect-lined-3.pug
-          include ../components/buttons/btn-rect-lined-4/btn-rect-lined-4.pug
-          +btn-rect-lined-1()
-          +btn-rect-lined-2()
-          +btn-rect-lined-3()
-          +btn-rect-lined-4()
+          +btn-rect({classes: "btn-rect--shdw-main-darken color-light"})
+          +btn-rect({classes: "btn-rect--shdw-main-darken color-light btn-rect--big"})
+          +btn-rect({classes: "btn-rect--shdw-second-darken color-light btn-rect--big btn-rect--color-second"})
+          +btn-rect({classes: "btn-rect--shdw-second-darken color-light btn-rect--color-second"})
 
         .row
-          include ../components/buttons/btn-rect-lined-trns-1/btn-rect-lined-trns-1.pug
-          include ../components/buttons/btn-rect-lined-trns-2/btn-rect-lined-trns-2.pug
-          include ../components/buttons/btn-rect-lined-trns-3/btn-rect-lined-trns-3.pug
-          include ../components/buttons/btn-rect-lined-trns-4/btn-rect-lined-trns-4.pug
-          +btn-rect-lined-trns-1()
-          +btn-rect-lined-trns-2()
-          +btn-rect-lined-trns-3()
-          +btn-rect-lined-trns-4()
+          +btn-rect({classes: "btn-rect--shdw-main btn-rect--bg-transp color-main"})
+          +btn-rect({classes: "btn-rect--shdw-main btn-rect--bg-transp color-main btn-rect--big"})
+          +btn-rect({classes: "btn-rect--shdw-second btn-rect--bg-transp color-second btn-rect--big btn-rect--second-border"})
+          +btn-rect({classes: "btn-rect--shdw-second btn-rect--bg-transp color-second btn-rect--second-border"})
 
       section.section.section--index-main
         h2 arrow buttons

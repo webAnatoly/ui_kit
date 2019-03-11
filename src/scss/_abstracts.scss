@@ -1,0 +1,34 @@
+$color-main: #4eb7a8;
+$color-main--darken: #28a290;
+$color-second: #e75735;
+$color-second--darken: #bf3e1f;
+
+.color-light {
+  color: $color-light;
+}
+
+.color-main {
+  color: $color-main;
+}
+.color-main--darken {
+  color: $color-main--darken;
+}
+.color-second {
+  color: $color-second;
+}
+.color-second--darken {
+  color: $color-second--darken;
+}
+
+.bg-color-main {
+  background-color: $color-main;
+}
+.bg-color-main--darken {
+  background-color: $color-main--darken;
+}
+.bg-color-second {
+  background-color: $color-second;
+}
+.bg-color-second--darken {
+  background-color: $color-second--darken;
+}

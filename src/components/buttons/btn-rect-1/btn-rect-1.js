@@ -1,2 +1,0 @@
-import btnRectHover from '../btnRectHover';
-

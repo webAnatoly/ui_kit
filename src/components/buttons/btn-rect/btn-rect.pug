@@ -1,0 +1,4 @@
+mixin btn-rect(opt)
+  - var type = 'button';
+  - if (opt) { type = opt.type ? opt.type : 'button'; }
+  button.btn-rect(class=opt ? opt.classes : '', type=type) button
