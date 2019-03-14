@@ -2,8 +2,8 @@ mixin btn-round(opt)
   - var type = 'button';
   - if (opt) { type = opt.type ? opt.type : 'button'; }
   button.btn-round(class=opt ? opt.classes : '', type=type)
-    case opt.left
+    case opt.right
       when true
-        span.btn-round__arrow.btn-round__arrow--left(class=opt ? opt.arrowClass : '')
+        span.btn-round__arrow.btn-round__arrow--right(class=opt ? opt.arrowClass : '')
       default
         span.btn-round__arrow(class=opt ? opt.arrowClass : '')

@@ -34,11 +34,11 @@ html(lang="en")
         .row
           include ../components/buttons/btn-round/btn-round.pug
           +btn-round({classes: "btn-round--border-main"})
-          +btn-round({classes: "btn-round--border-main", left: true})
+          +btn-round({classes: "btn-round--border-main", right: true})
           +btn-round({classes: "btn-round--bg-third", arrowClass: "btn-round__arrow--color-light"})
-          +btn-round({classes: "btn-round--bg-third", arrowClass: "btn-round__arrow--color-light", left: true})
+          +btn-round({classes: "btn-round--bg-third", arrowClass: "btn-round__arrow--color-light", right: true})
           +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light" })
-          +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light", left: true})
+          +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light", right: true})
       section.section.home__section.home__charts-container
         h2 percentages / pie chart
         include ../components/charts/r-chart/r-chart.pug

@@ -7,8 +7,8 @@
   border: transparent;
 
   &__arrow {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: transparent;
     border-left: 3px solid $color-main;
     border-bottom: 3px solid $color-main;
@@ -18,9 +18,9 @@
     left: 40%;
     transform: rotate(45deg);
 
-    &--left {
+    &--right {
       top: 35%;
-      left: 32%;
+      left: 25%;
       transform: rotate(225deg);
     }
 
