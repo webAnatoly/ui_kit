@@ -39,8 +39,15 @@ html(lang="en")
           +btn-round({classes: "btn-round--bg-third", arrowClass: "btn-round__arrow--color-light", left: true})
           +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light" })
           +btn-round({classes: "btn-round--bg-main", arrowClass: "btn-round__arrow--color-light", left: true})
-      section.section.home__section
+      section.section.home__section.home__charts-container
         h2 percentages / pie chart
+        include ../components/charts/r-chart/r-chart.pug
+        .row
+          +r-chart({percent: 0, cssClasses: "charts-container__r-chart"})
+          +r-chart({percent: 38, cssClasses: "charts-container__r-chart"})
+          +r-chart({percent: 62, cssClasses: "charts-container__r-chart"})
+          +r-chart({percent: 89, cssClasses: "charts-container__r-chart"})
+          +r-chart({cssClasses: "charts-container__r-chart"})
       section.section.home__section
         h2 sliders
       section.section.home__section

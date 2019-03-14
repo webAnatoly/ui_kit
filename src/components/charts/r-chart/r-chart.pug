@@ -1,0 +1,22 @@
+//- параметры миксина
+//- {
+//-   cssClasses: ""
+//-   barWidth: "",
+//-   barColor: "",
+//-   bgColor: "",
+//-   percent: "",
+//- }
+
+mixin r-chart(opt)
+  .r-chart(class=opt ? opt.cssClasses : "")
+    - const percent = opt ? opt.percent : 100;
+    - const barPercent = `${percent}, 100`;
+    - const barWidth = opt ? opt.barWidth || 2 : 2;
+    - const barColor = opt ? opt.barColor || '#e75735' : '#e75735';
+    - const bgColor = opt ? opt.bgColor || 'none' : 'none';
+
+    svg.r-chart__circular-chart(width='36' height='36' viewbox='0 0 36 36')
+      path.r-chart__circle-bg(fill=bgColor d='M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831')
+      path.r-chart__circle(stroke-width=barWidth stroke=barColor stroke-dasharray=barPercent d='M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831')
+    span.r-chart__percentage= percent
+
