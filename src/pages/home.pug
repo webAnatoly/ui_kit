@@ -47,7 +47,14 @@ html(lang="en")
           +r-chart({percent: 38, cssClasses: "charts-container__r-chart"})
           +r-chart({percent: 62, cssClasses: "charts-container__r-chart"})
           +r-chart({percent: 89, cssClasses: "charts-container__r-chart"})
-          +r-chart({cssClasses: "charts-container__r-chart"})
+          -
+            var pieChart = [
+              [11,"#747474"],
+              [25, "#e75735"],
+              [30,"#4eb7a8"],
+              [34,"#e5e5e5"],
+            ]
+          +r-chart({cssClasses: "charts-container__r-chart", pieChart: pieChart, barWidth: 6})
       section.section.home__section
         h2 sliders
       section.section.home__section

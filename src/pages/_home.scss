@@ -70,4 +70,28 @@
       left: 48.59rem;
     }
   }
+
+  &__video-section {
+
+    & .video-section-svg-holder {
+      width: 20rem;
+      height: 20rem;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circular-chart {
+        border: 2px dashed blue;
+        width: 80%;
+        height: 80%;
+        display: block;
+      }
+
+      .circle-2 {
+        fill: lightblue;
+        stroke: blue;
+      }
+    }
+  }
 }

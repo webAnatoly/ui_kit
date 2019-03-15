@@ -1,6 +1,7 @@
 .r-chart {
   width: 10.4rem;
   height: 10.4rem;
+  position: relative;
 
   &__circular-chart {
     display: block;
@@ -9,7 +10,7 @@
   }
 
   &__circle-bg {
-    // fill: none;
+    // fill: red;
     // stroke: $color-second;
     // stroke-width: 3;
     // stroke-dasharray: 10 100;
@@ -34,6 +35,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.r-chart.svg-pie-chart {
+  width: 11.5rem;
+  height: 11.5rem;
+  transform: translate(-.5rem, -.5rem);
 }
 
 @keyframes r-chart__progress {
